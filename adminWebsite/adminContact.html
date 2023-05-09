@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Alexanne Marcil </title>
+	<style>
+	body{
+		background-color: #C5FAD5;
+		margin-top: 0;
+	}
+	#navbar{
+		width:100%;
+		border-bottom: 5px solid #FFFFD2;
+		font-size: 20px;
+		font-family: Arial Black, sans-serif;
+		padding-bottom: 12px;
+		padding-top: 12px;
+		background-color: #AA96DA;
+	}
+	a:hover{
+		color: #FFFFD2;
+	}
+	a{
+		color: darkslateblue;
+		text-decoration: none;
+	}
+	tr{
+		text-align: center;
+	}
+	input{
+		display:block;
+		margin:auto;
+		padding:4px;
+		width:100px;
+	}
+	.content{
+		display: block;
+		margin-left: 30px;
+		margin-top: 40px;
+	
+	}
+	</style>
+	
+</head>
+<body>
+	<div class="navbar" style="margin-right:-19px; margin-left:-19px;">
+		<table id="navbar" style="padding:18px;" >
+			<tr>
+				<td><a href="adminIndex.html" target="_top"> Home </a></td>
+				<td><a href="adminResume.html" target="_top"> Resume </a></td>
+				<td><a href="adminProjects.html" target="_top"> Projects </a></td>
+				<td><a href="adminContact.html" target="_top"> Contact </a></td>
+				<td><a href="adminSocial.html" target="_top"> Social </a></td>
+				<td><a href="logout.html" target="_top"> Logout </a></td>
+			</tr>
+		</table>
+	</div>
+	<p class="content" id="contact">
+	</p>
+	<div class="content">
+		<input type="submit" value="Read Message" id="readMessage" onclick="readMessages()">
+	</div>
+	
+	<script type="text/javascript">
+		<!--
+		function readMessages(){
+			var fileInput = document.createElement("input")
+			fileInput.type = "file";
+			fileInput.accept = ".txt";
+			fileInput.click();
+			fileInput.addEventListener("change", writeToPage, false);
+			function writeToPage(){
+				var file = this.files[0];
+				var fr = new FileReader();
+				fr.readAsText(file);
+				fr.onload = function(){
+				   document.getElementById("contact").innerText = fr.result;
+				}
+			}
+		}
+		//-->
+	</script>
+</body>
+</html>

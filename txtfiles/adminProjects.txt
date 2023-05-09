@@ -1,0 +1,17 @@
+Snakes And Ladders
+Concordia University, Montreal, QC
+Programmed a snakes and ladder game that can be played by up to 6 players and dynamically updates the board to display it each turn
+Documented the program using JavaDoc
+Technical knowledge, programming applied, or equipment used: Java, Javadoc, Eclipse;
+Simple Electronic Voting System
+Concordia University, Montreal, QC
+Programmed a system to display candidates and voting results, as well as to allow the user to vote for a candidate or add new ones
+Organized code with the use of comments for better legibility by peers and professors
+Technical knowledge, programming applied, or equipment used: Java, Eclipse;
+International Baccalaureate's personal project
+École d'éducation internationale de Laval, Laval, QC
+Planned a research project from beginning to end whilst fulfilling project requirements
+Managed time for the project over a span of 6 months
+Created a documentary file based on a deep research of the subject
+Documented the research project from beginning to end
+Presented the project to peers and teachers in a personal project fair

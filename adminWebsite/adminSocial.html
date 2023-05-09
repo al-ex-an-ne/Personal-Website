@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Alexanne Marcil </title>
+	<style>
+	body{
+		background-color: #C5FAD5;
+		margin-top: 0;
+	}
+	#navbar{
+		width:100%;
+		border-bottom: 5px solid #FFFFD2;
+		font-size: 20px;
+		font-family: Arial Black, sans-serif;
+		padding-bottom: 12px;
+		padding-top: 12px;
+		background-color: #AA96DA;
+	}
+	a:hover{
+		color: #FFFFD2;
+	}
+	a{
+		color: darkslateblue;
+		text-decoration: none;
+	}
+	tr{
+		text-align: center;
+	}
+	.content{
+		margin-left: 30px;
+		margin-top: 40px;
+		text-align: center;
+	}
+	label{
+		font-size:18px;
+		font-family: Lucida Console, Monospace;
+		color: darkslateblue;
+	}
+	input{
+		width:300px;
+		padding: 5px;
+	}
+	</style>
+	
+</head>
+<body>
+	<div class="navbar" style="margin-right:-19px; margin-left:-19px;">
+		<table id="navbar" style="padding:18px;" >
+			<tr>
+				<td><a href="adminIndex.html" target="_top"> Home </a></td>
+				<td><a href="adminResume.html" target="_top"> Resume </a></td>
+				<td><a href="adminProjects.html" target="_top"> Projects </a></td>
+				<td><a href="adminContact.html" target="_top"> Contact </a></td>
+				<td><a href="adminSocial.html" target="_top"> Social </a></td>
+				<td><a href="logout.html" target="_top"> Logout </a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="content">
+		<label for="social1"> Social Link 1 </label> <br>
+		<input type="text" id="social1">
+	</div> 
+	<div class="content">
+		<label for="social2"> Social Link 2 </label> <br>
+		<input type="text" id="social2">
+	</div> 
+	<div class="content">
+		<label for="social3"> Social Link 3 </label> <br>
+		<input type="text" id="social3">
+	</div> 
+	<div class="content">
+		<input type="submit" value="Submit" id="submit" style="width:100px;padding:4px;" onclick="submitSocial()">
+	</div>
+	
+	<script type="text/javascript">
+		<!--
+		function submitSocial(){
+			var social1 = document.getElementById("social1").value;
+			var social2 = document.getElementById("social2").value;
+			var social3 = document.getElementById("social3").value;
+			var content = "Social Link 1:\n" + social1 + "\n\nSocial Link 2:\n" + social2 + "\n\nSocial Link 3:\n" + social3;
+		
+			var file = new File([content], "adminSocial.txt", {type:"text/plain"});
+			
+			if (social1.trim().length !== 0 || social2.trim().length !== 0 || social3.trim().length !== 0){
+				var link = document.createElement("a");
+				link.href = window.URL.createObjectURL(file);
+				link.download = "adminSocial.txt";
+				link.click();
+			}
+		}
+		//-->
+	</script>
+</body>
+</html>

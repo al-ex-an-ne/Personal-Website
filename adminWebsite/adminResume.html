@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Alexanne Marcil </title>
+	<style>
+	body{
+		background-color: #C5FAD5;
+		margin-top: 0;
+	}
+	#navbar{
+		width:100%;
+		border-bottom: 5px solid #FFFFD2;
+		font-size: 20px;
+		font-family: Arial Black, sans-serif;
+		padding-bottom: 12px;
+		padding-top: 12px;
+		background-color: #AA96DA;
+	}
+	a:hover{
+		color: #FFFFD2;
+	}
+	a{
+		color: darkslateblue;
+		text-decoration: none;
+	}
+	tr{
+		text-align: center;
+	}
+	.content{
+		display: block;
+		margin-left: 30px;
+		margin-top: 40px;
+		width: 70%;
+	}
+	label{
+		font-size:18px;
+		font-family: Lucida Console, Monospace;
+		color: darkslateblue;
+	}
+	textarea{
+		height:130px;
+		resize: none;
+		padding:5px;
+		border:1px solid darkslateblue;
+		width: 100%;
+		display: block;
+	}
+	input{
+		display:block;
+		margin:auto;
+		padding:4px;
+		width:100px;
+	}
+	#referees{
+		width: 70%;
+	}
+	
+	</style>
+	
+</head>
+<body>
+	<div class="navbar" style="margin-right:-19px; margin-left:-19px;">
+		<table id="navbar" style="padding:18px;" >
+			<tr>
+				<td><a href="adminIndex.html" target="_top"> Home </a></td>
+				<td><a href="adminResume.html" target="_top"> Resume </a></td>
+				<td><a href="adminProjects.html" target="_top"> Projects </a></td>
+				<td><a href="adminContact.html" target="_top"> Contact </a></td>
+				<td><a href="adminSocial.html" target="_top"> Social </a></td>
+				<td><a href="logout.html" target="_top"> Logout </a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="content">
+		<label for="education"> Educational Qualifications </label> 
+		<textarea id="education"> </textarea>
+	</div>
+	<div class="content">
+		<label for="skills"> Skill Set </label> 
+		<textarea  id="skills"> </textarea>
+	</div>
+	<div class="content">
+		<label for="awards"> Awards/Recognition </label> 
+		<textarea  id="awards"> </textarea>
+	</div>
+	<div class="content">
+		<label for="experience"> Work Experience </label> 
+		<textarea  id="experience" style="height: 400px;"> </textarea>
+	</div>
+	<div class="content">
+		<label for="referees"> Referees </label> 
+		<textarea  id="referees"> </textarea>
+	</div>
+	<div class="content">
+		<input type="submit" value="Submit" id="submit" onclick="submitResume()">
+	</div>
+	
+	<script type="text/javascript">
+		<!--
+		function submitResume(){
+			var education = document.getElementById("education").value;
+			var skills = document.getElementById("skills").value;
+			var awards = document.getElementById("awards").value;
+			var experience = document.getElementById("experience").value;
+			var referees = document.getElementById("referees").value;
+			
+			var content = "Educational Qualifications:\n" + education + "\n\nSkill Set:\n" + skills
+							+ "\n\nAwards/Recognition:\n" + awards + "\n\nWork Experience:\n" + experience
+							+ "\n\nReferees:\n" + experience;
+		
+			var file = new File([content], "adminResume.txt", {type:"text/plain"});
+			
+			if (education.trim().length !== 0 || skills.trim().length !== 0 || awards.trim().length !== 0 || experience.trim().length !== 0){
+				var link = document.createElement("a");
+				link.href = window.URL.createObjectURL(file);
+				link.download = "adminResume.txt";
+				link.click();
+			}
+		}
+		//-->
+	</script>
+</body>
+</html>
